@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+button:hover{
+background-color: black; color: white;
+
+}
+solve:hover{
+background-color: black; color: white;
+
+}
+</style>
+<title>GAUSS-ELIMINATION</title>
+<link rel="stylesheet" type="text/css" href="gauss.css" >
+</head>
+<body style="background-color:black;color:white">
+
+
+<h1><marquee>GAUSS-JORDAN Elimination &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GAUSS-JORDAN Elimination&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GAUSS-JORDAN Elimination &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GAUSS-JORDAN Elimination &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</marquee></h1>
+
+
+
+<hr style="color:blue;">
+<p style="color:lime;"><b>
+Here you can solve systems of simultaneous linear equations using Gauss-Jordan Elimination Calculator. 
+Our calculator is capable of solving systems with a single unique solution as well as undetermined systems which have infinitely many solutions. 
+
+
+</b>
+
+</p>
+<div style="text-align:center;padding-top:25px">
+<!-- Trigger/Open The Modal -->
+<h2 style="color:lime;">Matrix Dimension</h2>
+ <select style="width:100px" id = "num1" >
+			<option value="" selected disabled hidden></option>
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+               <option value = "5">5</option>
+               <option value = "6">6</option>
+               <option value = "7">7</option>
+               <option value = "8">8</option>
+               <option value = "9">9</option>
+             </select>&nbsp &nbsp x &nbsp &nbsp
+
+ 
+  <select style="width:100px" id = "num2">
+  <option value="" selected disabled hidden></option>
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+               <option value = "5">5</option>
+               <option value = "6">6</option>
+               <option value = "7">7</option>
+               <option value = "8">8</option>
+               <option value = "9">9</option>
+             </select><br>
+
+
+<br>
+
+<button  id="set">SET</button>&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<button id="reset">RESET</button>
+
+<div style="text-align:left;color:lime"><b>
+<h2 style="">About the method</h2>
+<p style="">To solve a system of linear equations using Gauss-Jordan elimination you need to do the following steps.</p>
+<p style="">1.Set an augmented matrix.</p>
+<p style="">2.In fact Gauss-Jordan elimination algorithm is divided into forward elimination and back substitution. Forward elimination of Gauss-Jordan calculator reduces matrix to row echelon form. Back substitution of Gauss-Jordan calculator reduces matrix to reduced row echelon form. But practically it is more convenient to eliminate all elements below and above at once when using Gauss-Jordan elimination calculator. Our calculator uses this method.</p>
+<p style="">3. It is important to notice that while calculating using Gauss-Jordan calculator if a matrix has at least one zero row with NONzero right hand side (column of constant terms) the system of equations is inconsistent then. The solution set of such system of linear equations doesn't exist.</p>
+</b>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>INPUT NUMBERS IN GIVEN FIELDS</h2>
+    </div>
+    <div Id="modal-body">
+   
+    </div>
+	 <button id="solve" style="color:blue;background:orange">Solve</button>&nbsp &nbsp
+	 <button id="reload" style="color:blue;background:orange">Reload</button>
+   <!-- <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>-->
+  </div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="gauss.js" ></script>
+</html>
